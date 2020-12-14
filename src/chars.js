@@ -12,8 +12,8 @@ var colorsObj = {
 
 var ourFunc = {
     sayGoodBye(name, color) {
-        console.log(`${firstName.char1} says goodbye. I like this color: ${colorsObj.firstColor}`);
-        console.log(this);
+        console.log(`${name} says goodbye. I like this color: ${color}`);
+        console.log(Object.is(this, ourFunc));
     }
 }
 export { firstName, colorsObj, ourFunc };
